@@ -1,3 +1,66 @@
+/*=============================================
+  Name: Nicolas Steinhauser
+  Student Number: 0877732
+  Assignment: Project #1 – Personal Website
+  Last Modified: October 22, 2025
+
+  Colour Guide:
+  #2c3e50  – Dark header background
+  #333333  – Body text
+  rgb(50,120,150) – Navigation background
+  white – Text and footer background
+  teal – Headings border & footer background
+==============================================*/
+
+/*==============================
+  GLOBAL STYLES
+==============================*/
+
+body {
+font-family: 'Roboto', Arial, sans-serif;
+color: #333333;
+padding: 1rem; 
+background: linear-gradient(180deg, rgba(240,248,255,1), rgba(255,255,255,1)); /* gradient requirement, and uses rgba (rgb variant) */
+}
+
+/*==============================
+  HEADER & NAVIGATION
+==============================*/
+
+header{
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 1.5rem;
+}
+
+header h1 {
+font-family: 'MyHeadingFont', 'Roboto', sans-serif; /* custom heading font */
+font-size: 2rem;
+margin-bottom: 0.25rem;
+}
+
+header p {
+font-size: 0.95rem;
+opacity: 0.95;
+}
+
+nav {
+margin-top: 0.5rem;
+background: rgb(50,120,150); /* rgb color example */
+padding: 0.5rem;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin-right: 1rem;
+font-weight: 600;
+}
+
+/*==============================
+  MAIN CONTENT
+==============================*/
+
 article{
     display: flex;
     align-items: center;
