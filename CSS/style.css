@@ -1,0 +1,13 @@
+article{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+figure {
+  flex: 1;                
+}
+
+section {
+  flex: 2;
+}                
