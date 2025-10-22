@@ -83,7 +83,7 @@ figure img {
 
 }
 
-figcaption{
+figcaption {
     text-align: center;
     font-size: 0.8em;
 }
@@ -97,6 +97,17 @@ h2 {
     clear: both; 
     font-family: 'MyHeadingFont', 'Roboto', sans-serif;
     font-size: 1.25rem;
+    margin-left: 2rem;
+}
+
+ol {
+margin-left: 1rem; 
+padding-left: 1rem;
+padding: 3rem;
+}
+
+li {
+    padding: 0.3rem;
 }
 
 /*==============================
