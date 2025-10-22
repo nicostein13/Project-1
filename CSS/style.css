@@ -5,12 +5,25 @@
   Last Modified: October 22, 2025
 
   Colour Guide:
-  #2c3e50  – Dark header background
+  #5c2611  – Dark header background
   #333333  – Body text
-  rgb(50,120,150) – Navigation background
+  rgb(221, 101, 54) – Navigation background
   white – Text and footer background
-  teal – Headings border & footer background
+  lightcoral – Headings border & footer background
 ==============================================*/
+
+/*==============================
+  FONT
+==============================*/
+
+@font-face {
+    font-family: 'Lora';
+    src: url('../fonts/lora-variablefont_wght-webfont.ttf') format('ttf'),
+         url('../fonts/lora-variablefont_wght-webfont.woff') format('woff'),
+         url('../fonts/lora-variablefont_wght-webfont.woff2') format('woff2');
+    font-weight: 400;
+}           
+
 
 /*==============================
   GLOBAL STYLES
@@ -28,7 +41,7 @@ body {
 ==============================*/
 
 header{
-    background: #2c3e50;
+    background: #5c2611;
     color: white;
     padding: 1rem 1.5rem;
 }
@@ -46,7 +59,7 @@ header p {
 
 nav {
     margin-top: 0.5rem;
-    background: rgb(50,120,150); 
+    background: rgb(221, 101, 54); 
     padding: 0.5rem;
 }
 
@@ -68,6 +81,8 @@ article{
     gap: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 figure {
@@ -95,7 +110,7 @@ section {
 
 h2 {
     clear: both; 
-    font-family: 'MyHeadingFont', 'Roboto', sans-serif;
+    font-family: 'Lora', sans-serif;
     font-size: 1.25rem;
     margin-left: 2rem;
 }
@@ -118,7 +133,7 @@ footer {
     margin-top: 1.5rem;
     padding: 0.75rem;
     text-align: center;
-    background: teal; /* named color */
+    background: lightcoral;
     color: white;
 }
 
