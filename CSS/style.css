@@ -17,10 +17,10 @@
 ==============================*/
 
 body {
-font-family: 'Roboto', Arial, sans-serif;
-color: #333333;
-padding: 1rem; 
-background: linear-gradient(180deg, rgba(240,248,255,1), rgba(255,255,255,1)); /* gradient requirement, and uses rgba (rgb variant) */
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #333333;
+    padding: 1rem; 
+    background: linear-gradient(180deg, rgba(240,248,255,1), rgba(255,255,255,1)); /* gradient requirement, and uses rgba (rgb variant) */
 }
 
 /*==============================
@@ -34,43 +34,88 @@ header{
 }
 
 header h1 {
-font-family: 'MyHeadingFont', 'Roboto', sans-serif; /* custom heading font */
-font-size: 2rem;
-margin-bottom: 0.25rem;
+    font-family: 'MyHeadingFont', 'Roboto', sans-serif; 
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
 }
 
 header p {
-font-size: 0.95rem;
-opacity: 0.95;
+    font-size: 0.95rem;
+    opacity: 0.95;
 }
 
 nav {
-margin-top: 0.5rem;
-background: rgb(50,120,150); /* rgb color example */
-padding: 0.5rem;
+    margin-top: 0.5rem;
+    background: rgb(50,120,150); 
+    padding: 0.5rem;
 }
 
 nav a {
-color: white;
-text-decoration: none;
-margin-right: 1rem;
-font-weight: 600;
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-weight: 600;
 }
 
 /*==============================
   MAIN CONTENT
 ==============================*/
 
+
 article{
     display: flex;
     align-items: center;
     gap: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 figure {
-  flex: 1;                
+  flex: 1; 
+  margin: 0 1rem 1rem 0;               
+}
+
+figure img {
+    width: 350px;
+    height: auto;
+    margin-right: 1rem;
+    border-radius: 6px;
+
+}
+
+figcaption{
+    text-align: center;
+    font-size: 0.8em;
 }
 
 section {
-  flex: 2;
+    flex: 2;
+    margin: 2rem;
 }                
+
+h2 {
+    clear: both; 
+    font-family: 'MyHeadingFont', 'Roboto', sans-serif;
+    font-size: 1.25rem;
+}
+
+/*==============================
+  FOOTER
+==============================*/
+
+footer {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    text-align: center;
+    background: teal; /* named color */
+    color: white;
+}
+
+/*==============================
+  MEDIA QUERIES
+==============================*/
+
+/* Responsive: stack layout on small screens */
+@media (max-width: 640px) {
+    figure img { float: none; width: 100%; margin-right: 0; margin-bottom: 0.5rem; }
+}
